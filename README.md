@@ -6,3 +6,4 @@ this is my work through 6.006 course, introduction to algorithms.
 
 
 [Function simulator tool](https://www.desmos.com/calculator/auubsajefh)
+[Latex editor](https://www.codecogs.com/latex/eqneditor.php)
