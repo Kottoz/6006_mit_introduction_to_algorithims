@@ -5,5 +5,5 @@ this is my work through 6.006 course, introduction to algorithms.
  ![equation](https://latex.codecogs.com/gif.latex?\fn_phv&space;\log_{2}{n})  is (with suitable rounding)   the number of times you can divide n by 2 before reaching 1
 
 
-[Function simulator tool](https://www.desmos.com/calculator/auubsajefh)
-[Latex editor](https://www.codecogs.com/latex/eqneditor.php)
+[Function simulator tool](https://www.desmos.com/calculator/auubsajefh).
+[Latex editor](https://www.codecogs.com/latex/eqneditor.php).
