@@ -1,4 +1,4 @@
 # 6006_mit_introduction_to_algorithims
 this is my work through 6.006 course, introduction to algorithms.
-### why do we use ![equation](http://latex.codecogs.com/gif.latex?O_t%3D%5Ctext%20%7B%20Onset%20event%20at%20time%20bin%20%7D%20t)  in algorithims analysis ?
+#### why do we use ![equation](<a href="https://www.codecogs.com/eqnedit.php?latex=(\log_{2}{n})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(\log_{2}{n})" title="(\log_{2}{n})" /></a>)  in algorithims analysis ?
 
