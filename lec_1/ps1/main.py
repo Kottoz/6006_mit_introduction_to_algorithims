@@ -24,7 +24,7 @@ def main():
     if len(sys.argv) > 1:
         problem = loadProblem(sys.argv[1])
     else:
-        problem = loadProblem(utils.getOpenFilename("problem2.py"))
+        problem = loadProblem(utils.getOpenFilename("problem.py"))
 
     # run all algorithms, gathering the traces and printing out the results as
     # we go
