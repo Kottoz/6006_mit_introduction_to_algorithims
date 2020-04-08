@@ -10,3 +10,4 @@ this is my work through 6.006 course, introduction to algorithms.
 - [Function simulator tool](https://www.desmos.com/calculator/auubsajefh).
 - [Latex editor](https://www.codecogs.com/latex/eqneditor.php).
 - [Python visualize](http://www.pythontutor.com/visualize.html#mode=edit)
+- [eq](https://latex.codecogs.com/gif.latex?\fn_phv&space;{\color{Green}&space;\log_{2}n})
