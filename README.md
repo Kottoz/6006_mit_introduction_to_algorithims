@@ -10,3 +10,4 @@ This is my work through 6.006 course, introduction to algorithms.
 - [Function simulator tool](https://www.desmos.com/calculator/auubsajefh).
 - [Latex editor](https://www.codecogs.com/latex/eqneditor.php).
 - [Python visualize](http://www.pythontutor.com/visualize.html#mode=edit)
+- [Python Cost Model](http://scripts.mit.edu/~6.006/fall08/wiki/index.php?title=Python_Cost_Model#Cost_of_Python_String_Operations)
