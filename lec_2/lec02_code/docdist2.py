@@ -46,7 +46,7 @@ def read_file(filename):
         f = open(filename, 'r')
         return f.readlines()
     except IOError:
-        print "Error opening or reading input file: ",filename
+        print ("Error opening or reading input file: ",filename)
         sys.exit()
 
 #################################################

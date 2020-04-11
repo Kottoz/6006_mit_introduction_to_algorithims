@@ -56,7 +56,7 @@ def read_file(filename):
 #O(len(lines)*len(chars))--> O(n^2)
 def get_words_from_line_list(L):
     """
-    Z is #lines in list
+    Z is #lines in doc
     K is #words in line (N/W)
     Parse the given list L of text lines into words.
     Return list of all words found.
@@ -72,7 +72,8 @@ def get_words_from_line_list(L):
 def get_words_from_string(line):
     """
     N --> number of characters in line 
-    W --> size of word consists of average #characters 
+    W --> number of words in doc 
+    w --> size of word, consists of average #characters 
     L --> number of lines 
 
     Return a list of the words in the given input string,
@@ -168,11 +169,11 @@ def inner_product(L1,L2):
     Example: inner_product([["and",3],["of",2],["the",5]],
                            [["and",4],["in",1],["of",1],["this",2]]) = 14.0 
     """
-    sum = 0.0
-    for word1, count1 in L1:
-        for word2, count2 in L2:
-            if word1 == word2:
-                sum += count1 * count2
+    sum = 0.0                                                                   #2  1   1
+    for word1, count1 in L1:                                                    #3  1   L1
+        for word2, count2 in L2:                                                #4  1   L1*L2
+            if word1 == word2:                                                  #5  W   L1*L2
+                sum += count1 * count2                                          #6  1   L1*L2
     return sum
 
 def vector_angle(L1,L2):
