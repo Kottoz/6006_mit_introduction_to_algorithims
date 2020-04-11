@@ -71,7 +71,7 @@ def get_words_from_line_list(L):
 # O(len(chars)) --> O(n)
 def get_words_from_string(line):
     """
-    N --> number of characters in line 
+    N --> number of characters in line/ N is the length of the line 
     W --> number of words in doc 
     w --> size of word, consists of average #characters 
     L --> number of lines 
@@ -89,7 +89,7 @@ def get_words_from_string(line):
         if c.isalnum():                                                     #12     1    N
             character_list.append(c)                                        #13     1    N(W/W+1)
         elif len(character_list)>0:                                         #14     1    N(1/W+1) 
-            word = "".join(character_list)                                  #15     W    N(W) 
+            word = "".join(character_list)                                  #15     W    N(1/W+1)
             word = word.lower()                                             #16     W    N(1/W+1)
             word_list.append(word)                                          #17     1    N(1/W+1)
             character_list = []                                             #18     1    N(1/W+1)
