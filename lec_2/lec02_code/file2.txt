@@ -1,0 +1,7 @@
+First line: This is a test file
+This is second line
+third line
+and subsiquent lines..
+and more..
+String.Historically, text files have been made of the familiar roman keyboard alphabet – abcdef..xyz012..89!@#$.. – with the extremely standard ASCII encoding (American Standard Code for Information Interchange). More recently, text has grown to include the idea of unicode characters.
+text files are one of the most universally standard ways to store information. A text file is something you could type up in a word processor.

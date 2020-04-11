@@ -38,7 +38,7 @@ import sys
 # Operation 1: read a text file ##
 ##################################
 def read_file(filename):
-    """ 
+    """ l
     Read the text file with the given filename;
     return a list of the lines of text in the file.
     """
