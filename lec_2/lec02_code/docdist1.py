@@ -56,19 +56,25 @@ def read_file(filename):
 #O(len(lines)*len(chars))--> O(n^2)
 def get_words_from_line_list(L):
     """
+    Z is #lines in list
+    K is #words in line (N/W)
     Parse the given list L of text lines into words.
     Return list of all words found.
     """
 
-    word_list = []
-    for line in L:
-        words_in_line = get_words_from_string(line)
-        word_list = word_list + words_in_line
-    return word_list
+    word_list = []                                                         #2   1   1
+    for line in L:                                                         #3   1   Z
+        words_in_line = get_words_from_string(line)                        #4   K   Z
+        word_list = word_list + words_in_line                              #5   ZK  (Z^2 * K)
+    return word_list                                                       #6   1   1
 
 # O(len(chars)) --> O(n)
 def get_words_from_string(line):
     """
+    N --> number of characters in line 
+    W --> size of word consists of average #characters 
+    L --> number of lines 
+
     Return a list of the words in the given input string,
     converting each word to lower-case.
 
@@ -76,21 +82,21 @@ def get_words_from_string(line):
     Output: a list of strings 
               (each string is a sequence of alphanumeric characters)
     """
-    word_list = []          # accumulates words in line
-    character_list = []     # accumulates characters in word
-    for c in line:
-        if c.isalnum():
-            character_list.append(c)
-        elif len(character_list)>0:
-            word = "".join(character_list)
-            word = word.lower()
-            word_list.append(word)
-            character_list = []
-    if len(character_list)>0:
-        word = "".join(character_list)
-        word = word.lower()
-        word_list.append(word)
-    return word_list
+    word_list = []          # accumulates words in line                     #9      1    1
+    character_list = []     # accumulates characters in word                #10     1    1
+    for c in line:                                                          #11     1    N
+        if c.isalnum():                                                     #12     1    N
+            character_list.append(c)                                        #13     1    N(W/W+1)
+        elif len(character_list)>0:                                         #14     1    N(1/W+1) 
+            word = "".join(character_list)                                  #15     W    N(W) 
+            word = word.lower()                                             #16     W    N(1/W+1)
+            word_list.append(word)                                          #17     1    N(1/W+1)
+            character_list = []                                             #18     1    N(1/W+1)
+    if len(character_list)>0:                                               #19     1    1
+        word = "".join(character_list)                                      #20     W    1
+        word = word.lower()                                                 #21     W    1
+        word_list.append(word)                                              #22     1    1
+    return word_list                                                        #23
 
 ##############################################
 # Operation 3: count frequency of each word ##
