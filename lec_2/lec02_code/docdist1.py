@@ -37,6 +37,7 @@ import sys
 ##################################
 # Operation 1: read a text file ##
 ##################################
+#O(n^2)
 def read_file(filename):
     """ l
     Read the text file with the given filename;
@@ -52,6 +53,7 @@ def read_file(filename):
 #################################################
 # Operation 2: split the text lines into words ##
 #################################################
+#O(len(lines)*len(chars))--> O(n^2)
 def get_words_from_line_list(L):
     """
     Parse the given list L of text lines into words.
@@ -64,6 +66,7 @@ def get_words_from_line_list(L):
         word_list = word_list + words_in_line
     return word_list
 
+# O(len(chars)) --> O(n)
 def get_words_from_string(line):
     """
     Return a list of the words in the given input string,
@@ -92,6 +95,7 @@ def get_words_from_string(line):
 ##############################################
 # Operation 3: count frequency of each word ##
 ##############################################
+#O(len(lines))-->O(n)
 def count_frequency(word_list):
     """
     Return a list giving pairs of form: (word,frequency)
@@ -109,6 +113,7 @@ def count_frequency(word_list):
 ###############################################################
 # Operation 4: sort words into alphabetic order             ###
 ###############################################################
+#brute force algorithim O(n^2)
 def insertion_sort(A):
     """
     Sort list A into order, in place.
@@ -137,10 +142,10 @@ def word_frequencies_for_file(filename):
     for the given file.
     """
 
-    line_list = read_file(filename)
-    word_list = get_words_from_line_list(line_list)
-    freq_mapping = count_frequency(word_list)
-    insertion_sort(freq_mapping)
+    line_list = read_file(filename)#O(n^2)
+    word_list = get_words_from_line_list(line_list)#O(n^2)
+    freq_mapping = count_frequency(word_list)#O(n^2)
+    insertion_sort(freq_mapping)#O(n^2)
 
     print "File",filename,":",
     print len(line_list),"lines,",
