@@ -46,7 +46,7 @@ def read_file(filename):
         f = open(filename, 'r')
         return f.readlines()
     except IOError:
-        print ("Error opening or reading input file: ",filename)
+        print ("Error opening or reading input file: ",filename
         sys.exit()
 
 #################################################
@@ -65,7 +65,7 @@ def get_words_from_line_list(L):
         word_list.extend(words_in_line)
     return word_list
 
-def get_words_from_string(line):
+def get_words_from_string(line):#O(N) N is the length of the line 
     """
     Return a list of the words in the given input string,
     converting each word to lower-case.
@@ -74,20 +74,20 @@ def get_words_from_string(line):
     Output: a list of strings 
               (each string is a sequence of alphanumeric characters)
     """
-    word_list = []          # accumulates words in line
-    character_list = []     # accumulates characters in word
-    for c in line:
-        if c.isalnum():
-            character_list.append(c)
-        elif len(character_list)>0:
-            word = "".join(character_list)
-            word = word.lower()
-            word_list.append(word)
-            character_list = []
-    if len(character_list)>0:
-        word = "".join(character_list)
-        word = word.lower()
-        word_list.append(word)
+    word_list = []          # accumulates words in line                 #1      1
+    character_list = []     # accumulates characters in word            #1      1
+    for c in line:                                                      #1      N
+        if c.isalnum():                                                 #w      N
+            character_list.append(c)                                    #1      N(w/w+1)
+        elif len(character_list)>0:                                     #1      N(1/w+1)
+            word = "".join(character_list)                              #w      N(1/w+1)
+            word = word.lower()                                         #w      N(1/w+1)
+            word_list.append(word)                                      #1      N(1/w+1)
+            character_list = []                                         #1      N(1/w+1)
+    if len(character_list)>0:                                           #1      1
+        word = "".join(character_list)                                  #w      1
+        word = word.lower()                                             #w      1
+        word_list.append(word)                                          #1      1
     return word_list
 
 ##############################################
@@ -143,10 +143,10 @@ def word_frequencies_for_file(filename):
     freq_mapping = count_frequency(word_list)
     insertion_sort(freq_mapping)
 
-    print "File",filename,":",
-    print len(line_list),"lines,",
-    print len(word_list),"words,",
-    print len(freq_mapping),"distinct words"
+    print ("File",filename,":")
+    print (len(line_list),"lines,")
+    print (len(word_list),"words,")
+    print (len(freq_mapping),"distinct words")
 
     return freq_mapping
 
