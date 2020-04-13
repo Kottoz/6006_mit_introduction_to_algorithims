@@ -57,15 +57,15 @@ def read_file(filename):
 def get_words_from_line_list(L):
     """
     Z is #lines in doc
-    K is #words in line (N/W)
+    K is #words in line (N/w)
     Parse the given list L of text lines into words.
     Return list of all words found.
     """
 
     word_list = []                                                         #2   1   1
     for line in L:                                                         #3   1   Z
-        words_in_line = get_words_from_string(line)                        #4   K   Z
-        word_list = word_list + words_in_line                              #5   ZK  (Z^2 * K)
+        words_in_line = get_words_from_string(line)                        #4   N   Z
+        word_list = word_list + words_in_line                              #5   ZK  (Z^2K)
     return word_list                                                       #6   1   1
 
 # O(len(chars)) --> O(n)
