@@ -10,7 +10,15 @@ This is my work through 6.006 course, introduction to algorithms.
 - We want to predict how the algorithm will behave (e.g. running time) on arbitrary inputs **(Asymptotic)**, and how it will compare to other algorithms
 - we look at the running time of an algorithm when the input size n is large enough so that constants and lower-order terms do not matter. This is called `aymptotic analysis of algorithms` .
 - **rate of growth of a function** `(O-notation, Ω-notation, Θ-notation)`, 
-f is below g ⇔ f ∈ O(g) ⇔ f ≤ g
+- Assume we have two functions f, g : N −→ R that represent running times. Comparing f and g in terms of their growth can be summarized as: 
+    - f is below g ⇔ f ∈ O(g) ⇔ f ≤ g
+    - f is above g ⇔ f ∈ Ω(g) ⇔ f ≥ g
+    - f is both above and below g ⇔ f ∈ Θ(g) ⇔ f = g 
+    - **NB** `⇔ means if and only if` 
+- **Growth rate of standard functions**
+- Polynomial of degree d is defined as: 
+    - [!equation](https://latex.codecogs.com/gif.latex?P(n)&space;=\sum_{i-1}^{d}&space;a_{i}n^{i}&space;=&space;\Theta&space;(n^{d}))
+
 
 #### [4] Divide and conquer
 - **Divide** the problem into a number of subproblems that are smaller instances of the same problem.
