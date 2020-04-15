@@ -39,8 +39,9 @@ def FindMaxSubarray(array, low, high):
         else:
             return (crossLow, crossHigh, crossSum)
 
-array = [13, -3, -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7]
+# array = [13, -3, -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7]
+array = [-3, -1, -5, -2]
 low = 0 
 high = len(array)-1
 low, high, sum = FindMaxSubarray (array, low, high) 
-#print(low, high, sum)
+print(low, high, sum)
