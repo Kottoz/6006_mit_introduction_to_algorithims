@@ -17,7 +17,16 @@ This is my work through 6.006 course, introduction to algorithms.
     - **NB** `⇔ means if and only if` 
 - **Growth rate of standard functions**
 - Polynomial of degree d is defined as: 
-    - ![equation](images/CodeCogsEqn.gif)
+    ![equation](images/CodeCogsEqn.gif)
+- lgkn=(lgn)k
+- lglgn = lg(lgn)
+- alogb c = clogb a
+- aloga b = b
+- log n = logb n a logb a
+- lg bn = n lg b
+- lgxy=lgx+lgy
+- logb= 1
+- a logb a
 
 
 #### [4] Divide and conquer
