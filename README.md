@@ -17,7 +17,7 @@ This is my work through 6.006 course, introduction to algorithms.
     - **NB** `⇔ means if and only if` 
 - **Growth rate of standard functions**
 - Polynomial of degree d is defined as: 
-    - [!equation](https://latex.codecogs.com/gif.latex?P(n)&space;=\sum_{i-1}^{d}&space;a_{i}n^{i}&space;=&space;\Theta&space;(n^{d}))
+    - [equation](https://latex.codecogs.com/gif.latex?P(n)&space;=\sum_{i-1}^{d}&space;a_{i}n^{i}&space;=&space;\Theta&space;(n^{d}))
 
 
 #### [4] Divide and conquer
