@@ -17,9 +17,9 @@ This is my work through 6.006 course, introduction to algorithms.
     - **NB** `⇔ means if and only if` 
 - **Growth rate of standard functions**
 - Polynomial of degree d is defined as: 
-    ![equation](images/CodeCogsEqn.gif)
-    
-    ![equation](images/logs.png)
+    - ![equation](images/CodeCogsEqn.gif)
+- **Properties of Log**
+- ![equation](images/logs.png)
 
 
 
