@@ -6,10 +6,24 @@ This is my work through 6.006 course, introduction to algorithms.
  ![equation](https://latex.codecogs.com/gif.latex?\fn_phv&space;\log_{2}{n})  is (with suitable rounding)   the number of times you can divide n by 2 before reaching 1
 
 ## Notes
+#### [1] Algorithim analysis
+    - We want to predict how the algorithm will behave (e.g. running time) on arbitrary inputs **(Asymptotic)**, and how it will compare to other algorithms
+    - we look at the running time of an algorithm when the input size n is large enough so that constants and lower-order terms do not matter. This is called `aymptotic analysis of algorithms` .
+    - **rate of growth of a function** 
 #### [4] Divide and conquer
 - **Divide** the problem into a number of subproblems that are smaller instances of the same problem.
 - **Conquer** the subproblems by solving them recursively. If the subproblem sizes are small enough which reaching the (**Base case**), just solve the subproblems in a straightforward manner `algorithm is solved in the most straightforward manner, without takingadvantage of any ideas that can make thealgorithm more efficient`.
+- Ex:. **Merge sort**
+    - Divide: Divide an array of n elements into two arrays of n/2 elements each.
+    - Conquer: Sort the two arrays recursively.
+    - Combine: Merge the two sorted arrays.
+
 - **Combine** the solutions to the subproblems into the solution for the original problem. 
+    #### [4.3] The substitution method
+    1. Guesstheformofthesolution.
+    2. Use mathematical induction to find the constants and show that the solution works.
+    We can use the substitution method to establish either upper or lower bounds on a recurrence.
+
 ## My solutions to CLRS
 #### [4] Divide and conquer
 
