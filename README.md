@@ -7,9 +7,10 @@ This is my work through 6.006 course, introduction to algorithms.
 
 ## Notes
 #### [1] Algorithim analysis
-    - We want to predict how the algorithm will behave (e.g. running time) on arbitrary inputs **(Asymptotic)**, and how it will compare to other algorithms
-    - we look at the running time of an algorithm when the input size n is large enough so that constants and lower-order terms do not matter. This is called `aymptotic analysis of algorithms` .
-    - **rate of growth of a function** 
+- We want to predict how the algorithm will behave (e.g. running time) on arbitrary inputs **(Asymptotic)**, and how it will compare to other algorithms
+- we look at the running time of an algorithm when the input size n is large enough so that constants and lower-order terms do not matter. This is called `aymptotic analysis of algorithms` .
+- **rate of growth of a function** 
+
 #### [4] Divide and conquer
 - **Divide** the problem into a number of subproblems that are smaller instances of the same problem.
 - **Conquer** the subproblems by solving them recursively. If the subproblem sizes are small enough which reaching the (**Base case**), just solve the subproblems in a straightforward manner `algorithm is solved in the most straightforward manner, without takingadvantage of any ideas that can make thealgorithm more efficient`.
