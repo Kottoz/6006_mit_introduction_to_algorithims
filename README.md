@@ -18,15 +18,8 @@ This is my work through 6.006 course, introduction to algorithms.
 - **Growth rate of standard functions**
 - Polynomial of degree d is defined as: 
     ![equation](images/CodeCogsEqn.gif)
-- lgkn=(lgn)k
-- lglgn = lg(lgn)
-- alogb c = clogb a
-- aloga b = b
-- log n = logb n a logb a
-- lg bn = n lg b
-- lgxy=lgx+lgy
-- logb= 1
-- a logb a
+    ![equation](images/Screen Shot 2020-04-15 at 4.35.18 AM.png)
+
 
 
 #### [4] Divide and conquer
