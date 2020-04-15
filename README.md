@@ -5,6 +5,13 @@ This is my work through 6.006 course, introduction to algorithms.
  You might expect that this is because computers represent numbers in binary, but usually that is not why, 
  ![equation](https://latex.codecogs.com/gif.latex?\fn_phv&space;\log_{2}{n})  is (with suitable rounding)   the number of times you can divide n by 2 before reaching 1
 
+## Notes
+#### [4] Divide and conquer
+- **Divide** the problem into a number of subproblems that are smaller instances of the same problem.
+- **Conquer** the subproblems by solving them recursively. If the subproblem sizes are small enough which reaching the (**Base case**), just solve the subproblems in a straightforward manner `algorithm is solved in the most straightforward manner, without takingadvantage of any ideas that can make thealgorithm more efficient`.
+- **Combine** the solutions to the subproblems into the solution for the original problem. 
+## My solutions to CLRS
+#### [4] Divide and conquer
 
 **Tools**
 - [Function simulator tool](https://www.desmos.com/calculator/auubsajefh).
