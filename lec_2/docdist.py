@@ -24,6 +24,7 @@
 #    inner_product(x,y) = x1*y1 + x2*y2 + ... xn*yn
 #    norm(x) = sqrt(inner_product(x,x))
 import sys
+import math
 ####################################################################
 # the specified file is read in
 ####################################################################
@@ -39,8 +40,54 @@ def read_file(file_name):
 # is converted into a list of alphanumeric "words"
 ####################################################################
 def get_words_in_lines(lines):
+    words ={}
+    word = []
     for line in lines:
-        
+        for char in line:
+            if char.isalnum():
+                word.append(char)
+            elif len(word)>0 :
+                word = "".join(word)
+                word = word.lower()
+                if word in words.keys():
+                    words[word] += 1
+                else:
+                    words[word] = 1
+                word = []
+
+    return words
+####################################################################
+# inner product
+####################################################################
+def inner_product(D1, D2):
+    sum = 0.0
+    for key in D1:
+        if key in D2:
+            sum += D1[key] * D2[key]
+    return sum
+
+####################################################################
+# angle 
+####################################################################
+def vector_angle(D1, D2):
+    numerator = inner_product(D1,D2)
+    denominator = math.sqrt(inner_product(D1,D1)*inner_product(D2,D2))
+    return math.acos(numerator/denominator)
+
+def distance(path_l1, path_l2):
+    f1 = read_file(path_l1)
+    f2 = read_file(path_l2)
+    words_f1 = get_words_in_lines(f1)
+    words_f2 = get_words_in_lines(f2)
+    distance = vector_angle(words_f1, words_f2)
+    return distance
+
+
+file1_path = "/Users/kotoz/Desktop/Algorithims/courses/MIT_introduction_to_algorithims_6.006/lec_2/lec02_code/file1.txt"
+file2_path = "/Users/kotoz/Desktop/Algorithims/courses/MIT_introduction_to_algorithims_6.006/lec_2/lec02_code/file2.txt"
+
+dis = distance(file1_path, file2_path)
+print(dis)
 
 
 
