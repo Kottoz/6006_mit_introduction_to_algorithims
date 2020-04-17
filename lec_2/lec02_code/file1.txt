@@ -1,4 +1,9 @@
-The simple "text file" is one of the oldest and simplest types of file. For that reason, text files are one of the most universally standard ways to store information. A text file is something you could type up in a word processor, and save with the "plain text" option. A text file is made of a sequence of characters, organized as a series of horizontal lines of text.
-There is no notion of bold or italic or color applied to the characters; they are just plain text characters, as we would store in a String.Historically, text files have been made of the familiar roman keyboard alphabet – abcdef..xyz012..89!@#$.. – with the extremely standard ASCII encoding (American Standard Code for Information Interchange). More recently, text has grown to include the idea of unicode characters like ø and !, but the encodings for those are not yet as standard as ASCII.
-The.java files where we write our Java code are examples of text files. The text file is such a simple, flexible way to store information, it will be with us for a long time to come. If you want to store information in a simple, non-proprietary way, the text file is a great choice.XML files, which are a very modern way to store information,
-are a type of text file.
+The simple "text file" is one of the oldest and simplest types of file. For that reason, text files are one of the most universally standard ways to store information. 
+A text file is something you could type up in a word processor, and save with the "plain text" option. 
+A text file is made of a sequence of characters, organized as a series of horizontal lines of text.
+There is no notion of bold or italic or color applied to the characters; they are just plain text characters, as we would store in a String.
+Historically, text files have been made of the familiar roman keyboard alphabet – abcdef..xyz012..89!@#$.. – with the extremely standard ASCII encoding (American Standard Code for Information Interchange).
+More recently, text has grown to include the idea of unicode characters like ø and !, but the encodings for those are not yet as standard as ASCII.
+The.java files where we write our Java code are examples of text files. 
+The text file is such a simple, flexible way to store information, it will be with us for a long time to come. 
+If you want to store information in a simple, non-proprietary way, the text file is a great choice.XML files, which are a very modern way to store information,are a type of text file.
