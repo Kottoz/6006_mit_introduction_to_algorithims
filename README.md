@@ -9,6 +9,8 @@ This is my work through 6.006 course, introduction to algorithms.
 #### [1] Algorithim analysis
 - We want to predict how the algorithm will behave (e.g. running time) on arbitrary inputs **(Asymptotic)**, and how it will compare to other algorithms
 - we look at the running time of an algorithm when the input size n is large enough so that constants and lower-order terms do not matter. This is called `aymptotic analysis of algorithms` .
+- Analyzing an algorithm has come to mean predicting the resources that the algo- rithm requires. Occasionally, resources such as memory, communication band- width, or computer hardware are of primary concern, but most often it is compu- tational time that we want to measure. 
+- 
 - **rate of growth of a function** `(O-notation, Ω-notation, Θ-notation)`, 
 - Assume we have two functions f, g : N −→ R that represent running times. Comparing f and g in terms of their growth can be summarized as: 
     - f is below g ⇔ f ∈ O(g) ⇔ f ≤ g
@@ -18,7 +20,7 @@ This is my work through 6.006 course, introduction to algorithms.
 - **Growth rate of standard functions**
 - Polynomial of degree d is defined as: 
     - ![equation](images/CodeCogsEqn.gif)
-- **Properties of Log**
+- **Properties of Log** 
 - ![equation](images/logs.png)
 
 
