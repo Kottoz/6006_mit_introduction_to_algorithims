@@ -1,27 +1,34 @@
-def mergeSort(A, p, r):
-    q = (p+r)//2
-    if p < r:
-        mergeSort(A, p, q)
-        mergeSort(A, q+1, r)
-        merge(A, p, q, r)
+def mergeSort(A):
+    mid = (len(A))//2
+    if len(A) > 1:
+        L = A[:mid]
+        R = A[mid:]
+        mergeSort(L)
+        mergeSort(R)
+        i = 0 
+        j = 0 
+        k = 0 
+        while i < len(L) and j < len(R):
+            if  L[i] < R[j]:
+                A[k]  = L[i]
+                i += 1
+            else:
+                A[k] = R[j]
+                j += 1
+            k += 1
+        while i < len(L):
+             A[k]  = L[i]
+             i += 1
+             k += 1
+        while j < len(R):
+             A[k]  = R[j]
+             j += 1
+             k += 1
 
-def merge(A, p, q, r):
-    L = [A[i] for i in range(p, q)]
-    R = [A[i] for i in range(q+1, r)]
-    L.append(float('inf'))
-    R.append(float('inf'))
-    i = 0 
-    j = 0  
-    for k in range(p, r):
-        if L[i] <= R[j]:
-            A[k] = L[i]
-            i += 1
-        else:
-            A[k] = R[j]
-            j += 1 
-
+#def merge(A, p, q, r):
     
 
-arr = [2, 4 ,1, 0]
-mergeSort(arr, 0, len(arr))
+
+arr = [2, 4 ,1, 10, 13, 0, 5]
+mergeSort(arr)
 print(arr)
