@@ -1,10 +1,13 @@
 def mergeSort(A):
+    print("Spliting", A)
     mid = (len(A))//2
     if len(A) > 1:
         L = A[:mid]
         R = A[mid:]
+
         mergeSort(L)
         mergeSort(R)
+
         i = 0 
         j = 0 
         k = 0 
@@ -24,11 +27,7 @@ def mergeSort(A):
              A[k]  = R[j]
              j += 1
              k += 1
-
-#def merge(A, p, q, r):
-    
-
-
-arr = [2, 4 ,1, 10, 13, 0, 5]
+    print("Merging", A)
+arr = [54, 26, 93, 17, 77, 31, 44, 55, 20]
 mergeSort(arr)
 print(arr)
