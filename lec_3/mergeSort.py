@@ -5,7 +5,7 @@ def mergeSort(A):
         L = A[:mid]
         R = A[mid:]
 
-        mergeSort(L)
+        mergeSort(L)#assumed that is sorted 
         mergeSort(R)
 
         i = 0 
