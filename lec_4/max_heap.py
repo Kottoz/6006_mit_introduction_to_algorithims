@@ -7,20 +7,15 @@
 #  */
 
 def max_heapfy(A, i):
-    
-    if i == 0 :
-        left_child = 1
-        right_child = 2
-    else:
-        left_child = 2*i
-        right_child = (2*i) + 1
+    left_child = (2*i) +1
+    right_child = (2*i) + 2
 
-    if A[left_child] > A[i] and left_child < len(A):
+    if left_child < len(A) and A[left_child] > A[i]  :
         largest = left_child
     else:
         largest = i
 
-    if A[right_child] > A[largest] and right_child < len(A):
+    if right_child < len(A) and A[right_child] > A[largest] :
         largest = right_child
 
     if largest != i:
@@ -29,8 +24,13 @@ def max_heapfy(A, i):
         A[largest] = temp
         max_heapfy(A, largest)
 
-a = [float('-inf'),8, 9, 10, 1, 3, 11]
-max_heapfy(a, 1)
+def build_max_heap(A):
+    heap_size = len(A)
+    for i in range((heap_size//2) , -1, -1):
+        max_heapfy(A, i)
+
+a = [4, 1, 3, 2, 16, 9 , 10, 14, 8, 7]
+build_max_heap(a)
 print(a)
      
 
