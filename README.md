@@ -5,6 +5,27 @@ This is my work through 6.006 course, introduction to algorithms.
  You might expect that this is because computers represent numbers in binary, but usually that is not why, 
  ![equation](https://latex.codecogs.com/gif.latex?\fn_phv&space;\log_{2}{n})  is (with suitable rounding)   the number of times you can divide n by 2 before reaching 1
 
+### why the worst case occurs when the bottom level of the tree is exactly half full?
+- `The children's subtrees each have size at most 2n/3 - the worst case occurs when the last row of the tree is exactly half full`
+Since the running time `T(n)` is analysed by the number of elements in the tree `(n)`, and the recursion steps into one of the subtrees, we need to find an upper bound on the number of nodes in a subtree, relative to n, and that will yield that` T(n) = T(max num. nodes in subtree)` + `O(1)`
+
+The worst case of number of nodes in a subtree is when the final row is as full as possible on one side, and as empty as possible on the other. This is called half full. And the left subtree size will be bounded by `2n/3`.
+
+If you're proposing a case with only a few nodes, then that's irrelevant, since all base cases can be considered `O(1)` and ignored.
+
+### how to calculate that 2n/3?
+- n a tree where each node has exactly either 0 or 2 children, the number of nodes with 0 children is one more than the number of nodes with 2 children.{Explanation: number of nodes at height h is 2^h, which by the summation formula of a geometric series equals (sum of nodes from height 0 to h-1) + 1; and all the nodes from height 0 to h-1 are the nodes with exactly 2 children}
+```
+
+    ROOT
+  L      R
+ / \    / \
+/   \  /   \
+-----  -----
+*****
+
+``` 
+Let k be the number of nodes in R. The number of nodes in L is k + (k + 1) = 2k + 1. The total number of nodes is n = 1 + (2k + 1) + k = 3k + 2 (root plus L plus R). The ratio is (2k + 1)/(3k + 2), which is bounded above by 2/3. No constant less than 2/3 works, because the limit as k goes to infinity is 2/3.
 ## Notes
 #### [1] Algorithim analysis
 - We want to predict how the algorithm will behave (e.g. running time) on arbitrary inputs **(Asymptotic)**, and how it will compare to other algorithms
