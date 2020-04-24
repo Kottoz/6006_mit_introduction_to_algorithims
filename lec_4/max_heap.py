@@ -29,8 +29,8 @@ def max_heapfy(A, i):
         A[largest] = temp
         max_heapfy(A, largest)
 
-a = [8, 9, 10, 1, 3, 11]
-max_heapfy(a, 0)
+a = [float('-inf'),8, 9, 10, 1, 3, 11]
+max_heapfy(a, 1)
 print(a)
      
 
