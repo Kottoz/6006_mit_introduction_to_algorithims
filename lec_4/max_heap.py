@@ -29,7 +29,7 @@ def build_max_heap(A):
     for i in range((heap_size//2) , -1, -1):
         max_heapfy(A, i)
 
-a = [4, 1, 3, 2, 16, 9 , 10, 14, 8, 7]
+a = [1, 3, 0, 5, 2, 4 , 6, 4, 7]
 build_max_heap(a)
 print(a)
      
