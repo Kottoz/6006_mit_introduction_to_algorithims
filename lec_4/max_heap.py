@@ -39,7 +39,7 @@ def heap_sort(A):
         A = A[:-1]
         max_heapfy(A, 0)
 
-a = [1, 3, 0, 5, 2, 4 , 6, 4, 7]
+a = [1, 3, 0, 5]#, 2, 4 , 6, 4, 7]
 heap_sort(a)
 print(a)
      
