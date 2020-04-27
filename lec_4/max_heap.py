@@ -31,13 +31,13 @@ def build_max_heap(A):
 def heap_sort(A):
     build_max_heap(A)
     for i in range(len(A)-1, -1, -1):
-        
-        temp = A[len(A)-1]
-        A[len(A)-1] = A[i]
-        A[i] = temp 
+
+        temp = A[i]
+        A[i] = A[0]
+        A[0] = temp 
 
         A = A[:-1]
-        max_heapfy(A, i)
+        max_heapfy(A, 0)
 
 a = [1, 3, 0, 5, 2, 4 , 6, 4, 7]
 heap_sort(a)
