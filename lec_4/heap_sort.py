@@ -38,10 +38,6 @@ def heapSort(arr):
         heapify(arr, i, 0) 
   
 # Driver code to test above 
-arr = [ 12, 11, 13, 5, 6, 7] 
-heapSort(arr) 
-n = len(arr) 
-print ("Sorted array is") 
-for i in range(n): 
-    print ("%d" %arr[i]), 
-# This code is contributed by Mohit Kumra 
+a = [3, 1, 5, 12, 2, 4 , 6, 4, 7]
+heapSort(a) 
+print(a)
