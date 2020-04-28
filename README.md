@@ -25,9 +25,6 @@ If you're proposing a case with only a few nodes, then that's irrelevant, since 
 ``` 
 Let `k` be the number of nodes in `R`. The number of nodes in `L` is `k + (k + 1) = 2k + 1`.
 - The total number of nodes is `n = 1 + (2k + 1) + k = 3k + 2` (root plus `L` plus `R`). The ratio is `(2k + 1)/(3k + 2)`, which is bounded above by `2/3`. No constant less than `2/3` works, because the limit as k goes to infinity is `2/3`.
-- **Resourses**
-    - [StackOverslow](https://stackoverflow.com/questions/9099110/worst-case-in-max-heapify-how-do-you-get-2n-3)
-    - [StackOverflow](https://stackoverflow.com/questions/6859514/worst-case-in-max-heapify-the-worst-case-occurs-when-the-bottom-level-of-the-t)
 ## Notes
 #### [1] Algorithim analysis
 - We want to predict how the algorithm will behave (e.g. running time) on arbitrary inputs **(Asymptotic)**, and how it will compare to other algorithms
