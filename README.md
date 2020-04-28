@@ -14,17 +14,22 @@ The worst case of number of nodes in a subtree is when the final row is as full 
 If you're proposing a case with only a few nodes, then that's irrelevant, since all base cases can be considered `O(1)` and ignored.
 
 ### how to calculate that 2n/3?
-- n a tree where each node has exactly either 0 or 2 children, the number of nodes with 0 children is one more than the number of nodes with 2 children.{Explanation: number of nodes at height `h` is `2^h`, which by the summation formula of a geometric series equals (sum of nodes from height 0 to `h-1`) + 1; and all the nodes from height 0 to `h-1` are the nodes with exactly 2 children}
+- n a tree where each node has exactly either 0 or 2 children, the number of nodes with 0 children is one more than the number of nodes with 2 children.{Explanation: number of nodes at height h is 2^h, which by the summation formula of a geometric series equals (sum of nodes from height 0 to h-1) + 1; and all the nodes from height 0 to h-1 are the nodes with exactly 2 children}
 ```
+
     ROOT
   L      R
  / \    / \
 /   \  /   \
 -----  -----
+<<<<<<< HEAD
 ***** 
+=======
+*****
+
+>>>>>>> parent of 926774d... Update README.md
 ``` 
-Let `k` be the number of nodes in `R`. The number of nodes in `L` is `k + (k + 1) = 2k + 1`.
-- The total number of nodes is `n = 1 + (2k + 1) + k = 3k + 2` (root plus `L` plus `R`). The ratio is `(2k + 1)/(3k + 2)`, which is bounded above by `2/3`. No constant less than `2/3` works, because the limit as k goes to infinity is `2/3`.
+Let k be the number of nodes in R. The number of nodes in L is k + (k + 1) = 2k + 1. The total number of nodes is n = 1 + (2k + 1) + k = 3k + 2 (root plus L plus R). The ratio is (2k + 1)/(3k + 2), which is bounded above by 2/3. No constant less than 2/3 works, because the limit as k goes to infinity is 2/3.
 ## Notes
 #### [1] Algorithim analysis
 - We want to predict how the algorithm will behave (e.g. running time) on arbitrary inputs **(Asymptotic)**, and how it will compare to other algorithms
