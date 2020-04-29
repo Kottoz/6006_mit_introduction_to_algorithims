@@ -26,7 +26,9 @@ class heap(object):
             if right_child < smallest_element:
                 smallest_element = right_child
             if i != smallest_element:
-                self.heap_list[i], self.heap_list[smallest_element] = self.heap_list[smallest_element], self.heap_list[i]
+                temp = self.heap_list[i]
+                self.heap_list[i] = self.heap_list[smallest_element]
+                self.heap_list[smallest_element] = temp
             i = smallest_element
 
     def del_min(self):
@@ -45,5 +47,8 @@ class heap(object):
         while i > 0 :
             self.prec_down(i)
             i = i - 1
-
+h = heap()
+lst = [6,2,4,13,0,8]
+h.build_heap(lst)
+print(lst)
 
