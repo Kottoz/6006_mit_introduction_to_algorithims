@@ -26,7 +26,7 @@ If you're proposing a case with only a few nodes, then that's irrelevant, since 
 Let k be the number of nodes in R. The number of nodes in L is k + (k + 1) = 2k + 1. The total number of nodes is n = 1 + (2k + 1) + k = 3k + 2 (root plus L plus R). The ratio is (2k + 1)/(3k + 2), which is bounded above by 2/3. No constant less than 2/3 works, because the limit as k goes to infinity is 2/3.
 
 #### Heap (data structure)
-- In computer science, a heap is a specialized tree-based data structure which is essentially an almost complete
+- In computer science, a heap is a specialized tree-based data structure which is essentially an almost complete.
 
 #### BST 
 - Invariant for BST, for all nodes x if y is in left subtree, so key(x)>=key(y),
