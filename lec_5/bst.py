@@ -34,6 +34,6 @@ class BinarySearchTree:
 
 bst = BinarySearchTree()
 bst.put(13, 7)
-
-
-
+bst.put(5, 7)
+bst.put(34, 7)
+bst.put(14, 7)
