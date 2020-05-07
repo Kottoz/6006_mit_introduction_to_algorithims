@@ -1,3 +1,4 @@
+import treenode
 class BinarySearchTree:
     def __init__(self):
         self.root = None
@@ -12,4 +13,6 @@ class BinarySearchTree:
     def put(slef, key, val):
         if self.root:
             self._put(key, val, self.root)
+        else:
+            self.root = TreeNode
 
