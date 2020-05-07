@@ -32,6 +32,8 @@ class BinarySearchTree:
                         parent= current_node)
 
 
+bst = BinarySearchTree()
+bst.put(13, 7)
 
 
 
