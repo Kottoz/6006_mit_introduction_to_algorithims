@@ -33,14 +33,14 @@ Let k be the number of nodes in R. The number of nodes in L is k + (k + 1) = 2k 
 y is in the right subtree, so key(x)< key(y)
 - 
 ```
-    |23|
+    |R|
    /    \
-|17|    | 25|
+|<R|    | >R|
  / \     /  \
 /   \   /    \
 -----   -----
 ``` 
-
+- all operations of BST take O(h), which **h** is height (the longest path from root to leaf)
 ## Notes
 #### [1] Algorithim analysis
 - We want to predict how the algorithm will behave (e.g. running time) on arbitrary inputs **(Asymptotic)**, and how it will compare to other algorithms
