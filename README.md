@@ -41,6 +41,10 @@ y is in the right subtree, so key(x)< key(y)
 -----   -----
 ``` 
 - all operations of BST take O(h), which **h** is height (the longest path from root to leaf)
+
+#### AVL 
+- AVL are always balanced, which means height of tree is log(n).
+
 ## Notes
 #### [1] Algorithim analysis
 - We want to predict how the algorithm will behave (e.g. running time) on arbitrary inputs **(Asymptotic)**, and how it will compare to other algorithms
