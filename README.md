@@ -30,8 +30,8 @@ Let k be the number of nodes in R. The number of nodes in L is k + (k + 1) = 2k 
 
 #### BST 
 - Invariant for BST, for all nodes x if y is in left subtree, so key(x)>=key(y),
-y is in the right subtree, so key(x)< key(y)
-- 
+y is in the right subtree, so key(x)< key(y) 
+-  
 ```
     |R|
    /    \
