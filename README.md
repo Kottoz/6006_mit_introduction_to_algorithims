@@ -41,7 +41,7 @@ y is in the right subtree, so key(x)< key(y)
 -----   -----
 ``` 
 - all operations of BST take O(h), which **h** is height (the longest path from root to leaf)
-- all operations of BST take O(h), which **h** is height (the longest path from root to leaf)
+
 
 #### AVL 
 - AVL are always balanced, which means height of tree is log(n).
