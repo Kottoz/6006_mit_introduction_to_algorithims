@@ -93,6 +93,7 @@ instead of  using L and R new arrays to sort, quick is inplace sorting.
 - [Latex editor](https://www.codecogs.com/latex/eqneditor.php).
 - [Python visualize](http://www.pythontutor.com/visualize.html#mode=edit)
 - [Python Cost Model](http://scripts.mit.edu/~6.006/fall08/wiki/index.php?title=Python_Cost_Model#Cost_of_Python_String_Operations)
+- [hacker earth](https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/tutorial/)
 
 
 **Refrences**
