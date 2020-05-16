@@ -85,6 +85,8 @@ y is in the right subtree, so key(x)< key(y)
 - its expected running time is nlgn.
 - Quicksort, like merge sort, applies the divide-and-conquer but in sorting part
 instead of  using L and R new arrays to sort, quick is inplace sorting.
+- A quick sort first selects a value, which is called the pivot value(any item in the list last or first or even mid)
+- The role of the pivot value is to assist with splitting the list.
 - 
 **Tools**
 - [Function simulator tool](https://www.desmos.com/calculator/auubsajefh).
