@@ -80,9 +80,12 @@ y is in the right subtree, so key(x)< key(y)
     2. Use mathematical induction to find the constants and show that the solution works.
     We can use the substitution method to establish either upper or lower bounds on a recurrence.
 
-## My solutions to CLRS
-#### [4] Divide and conquer
-
+#### [5] Quick sorting
+- worst-case running time of n^2 on an input array of n numbers.
+- its expected running time is nlgn.
+- Quicksort, like merge sort, applies the divide-and-conquer but in sorting part
+instead of  using L and R new arrays to sort, quick is inplace sorting.
+- 
 **Tools**
 - [Function simulator tool](https://www.desmos.com/calculator/auubsajefh).
 - [Latex editor](https://www.codecogs.com/latex/eqneditor.php).
