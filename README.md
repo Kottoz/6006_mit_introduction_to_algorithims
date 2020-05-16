@@ -87,7 +87,7 @@ y is in the right subtree, so key(x)< key(y)
 instead of  using L and R new arrays to sort, quick is inplace sorting.
 - A quick sort first selects a value, which is called the pivot value(any item in the list last or first or even mid)
 - The role of the pivot value is to assist with splitting the list.
-- 
+- the final position of pivot is called split point which all elements that smaller than pivot will be in left of pivot other wise in right. 
 **Tools**
 - [Function simulator tool](https://www.desmos.com/calculator/auubsajefh).
 - [Latex editor](https://www.codecogs.com/latex/eqneditor.php).
